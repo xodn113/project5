@@ -906,4 +906,46 @@ int main(void) {
 	return 0;
 
 }
+
+int main(void) {
+	int a = 10;
+	int* p = &a;
+
+	printf("변수 a의값: %d\n", a);
+	printf("변수 a의 메모리주소: %p\n", &a);
+	printf("포인터 p의 값: %p\n", p);
+	printf("포인터 p가 가리키는 값: %d\n", *p);
+}
+
+int main(void) {
+	int a = 10;
+	int* p = &a;
+
+	printf("a의 초기값: %d\n", a);
+	*p = 20;
+	printf("포인터를 통해 변경된 a의값: %d\n", a);
+}
+
+
+int main(void) {
+	char *pc = (char *)0x10000;
+	int *pi = (int *)0x10000;
+	double *pd = (double *)0x10000;
+
+	printf("증가 전 pc=%p, pi=%p, pd=%p\n", pc, pi, pd);
+	pc++;
+	pi++;
+	pd++;
+	printf("증가 후 pc=%p, pi=%p, pd=%p\n", pc, pi, pd);
+}
+
+int main(void) {
+	int arr[5] = { 10, 20, 30, 40, 50 };
+	int* ptr1 = arr, * ptr2 = &arr[0];
+
+	printf("배열이름 arr: %p\n", arr);
+	printf("포인터 ptr1: %p\n", ptr1);
+	printf("포인터 ptr2: %p\n", ptr2);
+	printf("arr[0]: %d, *ptr1: %d  *ptr2[0]: %d\n", arr[0], *ptr1, ptr2[0]);
+}
 */

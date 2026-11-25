@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="aaa.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="kkk.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bbbb.c">
+    <ClCompile Include="Taewoo.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
